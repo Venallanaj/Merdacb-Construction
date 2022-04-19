@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/index-3.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-3.html'));
+});
 
 Route::get('/', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index.html'));
 });
+
