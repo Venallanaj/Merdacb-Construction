@@ -14,11 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/index-3.html', function () {
+Route::get('/', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-3.html'));
 });
 
-Route::get('/', function () {
-    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index.html'));
+Route::get('index-1.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-1.html'));
+});
+
+
+Route::get('index-2.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-2.html'));
+});
+
+
+Route::get('index-3.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-3.html'));
+});
+
+Route::get('index-4.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-4.html'));
+});
+
+Route::get('index-5.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-5.html'));
 });
 
