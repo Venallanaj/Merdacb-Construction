@@ -10488,9 +10488,10 @@ blockquote {
       font-weight: 600;
       margin-bottom: 0; }
     .ltn__testimonial-item-7 .ltn__testimoni-info-inner .ltn__testimoni-name-designation label {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 0;
-      text-transform: uppercase; }
+      text-transform: capitalize;
+      font-weight: bold }
   .ltn__testimonial-item-7::before {
     position: absolute;
     content: "";
