@@ -10231,8 +10231,12 @@ blockquote {
 /* ----------------------------------------------------
     Testimonial ( 1, 2, 3, 4, 5, 6 )
 ---------------------------------------------------- */
+
+/*It is testimonail general for all styles*/
 .ltn__testimonial-item {
   max-width: 80%;
+  max-height: 100%;
+  height: 370px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
@@ -10257,7 +10261,7 @@ blockquote {
     line-height: 48px;
     border: 1px solid;
     border-radius: 100%;
-    font-size: 18px; }  */
+    font-size: 18px; }  
 
 /* testimonial-item-2 */
 .ltn__testimonial-item-2 {
@@ -10450,6 +10454,8 @@ blockquote {
     font-size: 28px; }
 
 /* testimonial-item-7 */
+
+/*Testimonial for our case testimonial-item-7*/
 .ltn__testimonial-item-7 {
   background-color: var(--white);
   padding: 30px 35px 40px;
@@ -10513,10 +10519,9 @@ blockquote {
     color: var(--ltn__secondary-color); }
 
 /* testimonial-item-8 */
+/*Also styles for our testiomnials*/
 .ltn__testimonial-item-8 {
  padding: 40px 35px 35px;
-
- height: 90%;
 
 }
   .ltn__testimonial-item-8 .ltn__testimoni-info p {
