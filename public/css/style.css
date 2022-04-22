@@ -555,8 +555,8 @@ ol li {
 .gradient-color-1 {
   background: var(--gradient-color-1); }
 
-.gradient-color-2 {
-  background: var(--gradient-color-2); }
+/* .gradient-color-2 {
+  background: var(--gradient-color-2); } */
 
 .gradient-color-3 {
   background: var(--gradient-color-3); }
@@ -5238,7 +5238,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       color: var(--ltn__primary-color) !important; }
 
 .menu-color-white .ltn__main-menu > ul > li > a {
-  color: var(--white); }
+  color: var(--ltn__heading-color); }
 
 /* ----------------------------------------
   Header 5
@@ -5338,12 +5338,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 /* ltn__header-transparent */
 .ltn__header-transparent {
-  position: absolute;
+
   width: 100%;
   z-index: 999;
-  background-color: transparent; }
+  }
   .ltn__header-transparent .top-area-color-white {
-    background-color: transparent; }
+   }
 
 /* ----------------------------------------
   Utilize Mobile Menu
@@ -10236,7 +10236,7 @@ blockquote {
 .ltn__testimonial-item {
   max-width: 80%;
   max-height: 100%;
-  height: 370px !important;
+  height: 370px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
