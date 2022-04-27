@@ -48,7 +48,3 @@ Route::get('about.html', function () {
 Route::get('contact.html', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
 });
-
-Route::get('mail.php', function () {
-    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/mail.php'));
-});
