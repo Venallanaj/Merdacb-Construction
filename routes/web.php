@@ -40,3 +40,8 @@ Route::get('index-5.html', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-5.html'));
 });
 
+Route::get('contact.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
+});
+
+
