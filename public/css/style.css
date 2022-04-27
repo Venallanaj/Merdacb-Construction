@@ -8439,7 +8439,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../img/bg/21.jpg);
+    background-image: url(../images/bg/ceo.jpg);
     height: 100%;
     width: 48%;
     left: auto;
@@ -11399,16 +11399,17 @@ input.cart-plus-minus-box {
   margin: 10px 0 20px 0;
   padding: 0 0; }
 
-.slick-current .ltn__img-slide-item-1 {
-  -webkit-box-shadow: var(--ltn__box-shadow-1);
-  box-shadow: var(--ltn__box-shadow-1); }
+.slick-current .ltn__img-slide-item-1  {
+ -webkit-box-shadow: var(--ltn__box-shadow-1);
+  box-shadow: var(--ltn__box-shadow-1); } 
 
 /* img-slide-item-2 */
-.ltn__img-slide-item-2 {
-  margin-bottom: 30px; }
+.ltn__img-slide-item-2   {
+ margin-bottom: 30px; } 
 
 /* img-slide-item-3 */
-.ltn__img-slide-item-3 {
+/*Here start to styles our work for index.3 html*/
+ .ltn__img-slide-item-3 {
   position: relative;
   margin-bottom: 85px; }
   .ltn__img-slide-item-3 .ltn__img-slide-info {
@@ -11437,6 +11438,11 @@ input.cart-plus-minus-box {
     visibility: hidden;
     -webkit-box-shadow: var(--ltn__box-shadow-2);
     box-shadow: var(--ltn__box-shadow-2); }
+    .ltn__img-slide-item-3 a img{
+      height: 400px;
+      width: 100%;
+      max-width: 100%;
+    }
   .ltn__img-slide-item-3 .ltn__img-slide-info-brief {
     padding-right: 20px; }
   .ltn__img-slide-item-3 h6 {
@@ -11460,6 +11466,16 @@ input.cart-plus-minus-box {
   bottom: -65px;
   opacity: 1;
   visibility: visible; }
+
+ 
+  @media only screen and (max-width: 600px) {
+    .ltn__img-slide-item-3 a img{
+      height: 250px;
+    }
+  }  
+
+/*Here finished to styles our work for index.3 html*/
+
 
 .ltn__img-slide-item-3-2 .ltn__img-slide-info {
   display: block;
@@ -11486,7 +11502,7 @@ input.cart-plus-minus-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-
+/* 
 .ltn__img-slide-item-4 {
   position: relative;
   margin-bottom: 30px; }
@@ -11528,7 +11544,7 @@ input.cart-plus-minus-box {
   .ltn__img-slide-item-4:hover .ltn__img-slide-info {
     bottom: 0;
     opacity: 1;
-    visibility: visible; }
+    visibility: visible; } */
 
 @media (max-width: 1399px) {
   .ltn__img-slide-item-3 .ltn__img-slide-info {
