@@ -7,6 +7,8 @@ use Mail;
 
 class ContactController extends Controller
 {
+   
+  
     public function contact(){
         return view('contact');
     }
@@ -31,4 +33,6 @@ class ContactController extends Controller
         return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
 
     }
+
+   
 }
