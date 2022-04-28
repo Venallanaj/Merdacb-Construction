@@ -30,7 +30,8 @@ class ContactController extends Controller
                                 ->subject('Your Website Contact Form');
         });
 
-        return back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
+    //  return Redirect::back()->with('success', 'Thanks for contacting me, I will get back to you soon!');
+     return view('contact');
 
     }
 

@@ -18,7 +18,7 @@
         </div>
         @endif
 
-        <form method="POST" action="/contact">
+        <form action="{{ url('contact') }}" method="POST">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                 <label for="email">Email address</label>

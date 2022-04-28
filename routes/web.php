@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('contact','App\Http\Controllers\ContactController@contact');  
+Route::post('contact','App\Http\Controllers\ContactController@contactPost');  
+
 
 Route::get('/', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/index-3.html'));
@@ -45,10 +48,9 @@ Route::get('about.html', function () {
 });
 
 
-Route::get('contact.html', function () {
-    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
-});
+// Route::get('contact.html', function () {
+//     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
+// });
 
 
-Route::get('/contact', 'ContactController@contact')->name('contact');
-Route::post('/contact', 'ContactController@contactPost')->name('contactPost');
+
