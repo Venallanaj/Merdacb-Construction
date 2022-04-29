@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Redirect;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
