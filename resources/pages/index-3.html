@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <!-- Place favicon.png in the root directory -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font Icons css -->
@@ -52,13 +53,16 @@
                                 <ul>
                                     <li>
                                         <!-- ltn__language-menu -->
-                                        <div class="ltn__drop-menu ltn__currency-menu ltn__language-menu">
-                                            <ul>
-                                                <li><a href="#" class="dropdown-toggle"><span class="active-currency">English</span></a>
+                                        <div class="ltn__drop-menu ltn__currency-menu ltn__language-menu" id="google_translate_element">
+                                            <ul class="menu-traslate-header">
+                                                <li><a href="#" class="dropdown-toggle"><span class="active-currency">Language</span></a>
                                                     <ul>
-                                                        <li><a href="#">Swedish </a></li>
+                                                        <!-- <li><a href="#googtrans(sw|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA">English</a></li> -->
+                                                        <!-- <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li> -->
+                                                      
+                                                        <!-- <li><a href="#">Swedish </a></li>
                                                         <li><a href="#">English</a></li>
-                                                       
+                                                        -->
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -1542,9 +1546,38 @@
 
     <!-- All JS Plugins -->
     <script src="js/plugins.js"></script>
+
     <!-- Main JS -->
     <script src="js/main.js"></script>
+
+  <!--JS Google translate-->
+
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'ar,en,es,fr,km,ru,sq,vi,zh-CN', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE, 
+            multilanguagePage: true, 
+            gaTrack: true, 
+          }, 'google_translate_element');
+        }
+        jQuery(document).ready(function($) {
+          $('.menu-traslate-header ul li a').click(function(event) {
+              window.location = $(this).attr('href');
+              location.reload();
+          });
+        });
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+    
+
+      
+        
   
+        
 </body>
 </html>
 <style>
