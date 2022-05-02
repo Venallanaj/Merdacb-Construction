@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div class="ltn__contact-message-area mb-120 mb--100">
     <div class="container">
         @if(session('success'))
         <div class="alert alert-success">
@@ -40,6 +40,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+</div>
 
 </body>
 
