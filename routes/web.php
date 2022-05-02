@@ -47,10 +47,14 @@ Route::get('about.html', function () {
     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/about.html'));
 });
 
-
-// Route::get('contact.html', function () {
-//     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
+// Route::get('contact.blade.php', function () {
+//     return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/views/contact.blade.php'));
 // });
+
+
+Route::get('contact.html', function () {
+    return view('welcome')->with('post', file_get_contents(__DIR__ . '/../resources/pages/contact.html'));
+});
 
 
 

@@ -4194,6 +4194,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+  .site-logo img{
+    width: 150px;
+    height: auto;
+  }
+
 /* ----------------------------------------------
     Header Bottom Area (header-2)
 ---------------------------------------------- */
